@@ -474,9 +474,13 @@
       <excludeFolder url="file://$MODULE_DIR$/Lecture Attachments/13 Native Device Features/Finished Challenge/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/Lecture Attachments/13 Native Device Features/Finished Challenge/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/Lecture Attachments/13 Native Device Features/Finished Challenge/build" />
+      <excludeFolder url="file://$MODULE_DIR$/projects/quiz_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/projects/quiz_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/projects/quiz_app/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
   </component>
 </module>
