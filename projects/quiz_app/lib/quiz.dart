@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import "package:quiz_app/data/questions.dart";
 import "package:quiz_app/questioins_screen.dart";
+import "package:quiz_app/results_screen.dart";
 import "package:quiz_app/start_screen.dart";
 
 class Quiz extends StatefulWidget {
@@ -35,9 +36,12 @@ class _QuizState extends State<Quiz> {
 
   @override
   Widget build(BuildContext context) {
-    var screenWidget = activeScreen == "start-screen"
-        ? StartScreen(switchScreen)
-        : QuestionsScreen(onSelectAnswer: chooseAnswer);
+    Map<String, Widget> screens = {
+      "start-screen": StartScreen(switchScreen),
+      "questions-screen": QuestionsScreen(onSelectAnswer: chooseAnswer),
+      "result-screen": ResultsScreen(chosenAnswers: selectedAnswers)
+    };
+    Widget? screenWidget = screens[activeScreen];
 
     return MaterialApp(
       home: Scaffold(
