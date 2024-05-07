@@ -34,12 +34,19 @@ class _QuizState extends State<Quiz> {
     }
   }
 
+  void restartQuiz() {
+    setState(() {
+      activeScreen = "questions-screen";
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     Map<String, Widget> screens = {
       "start-screen": StartScreen(switchScreen),
       "questions-screen": QuestionsScreen(onSelectAnswer: chooseAnswer),
-      "result-screen": ResultsScreen(chosenAnswers: selectedAnswers)
+      "result-screen":
+          ResultsScreen(chosenAnswers: selectedAnswers, onRestart: restartQuiz)
     };
     Widget? screenWidget = screens[activeScreen];
 
