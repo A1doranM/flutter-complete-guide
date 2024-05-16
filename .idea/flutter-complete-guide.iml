@@ -492,6 +492,9 @@
       <excludeFolder url="file://$MODULE_DIR$/projects/expense_tracker_app/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/projects/expense_tracker_app/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/projects/expense_tracker_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/projects/meals_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/projects/meals_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/projects/meals_app/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
