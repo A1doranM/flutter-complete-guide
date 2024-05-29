@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:shopping_list/data/dummy_items.dart';
+import 'package:shopping_list_app/data/dummy_items.dart';
 
 class GroceryList extends StatelessWidget {
   const GroceryList({super.key});
